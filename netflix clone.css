@@ -35,7 +35,7 @@ header button:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 86vh;
   color: white;
 }
 #box1 {
@@ -133,37 +133,45 @@ input::placeholder {
 }
 @media screen and (max-width: 767px) {
   #box1 h1 {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
+    padding: 10px;
   }
   header button {
-    width: 60px;
-    height: 7vh;
+    width: 70px;
+    height: 30px;
     font-size: 0.6rem;
   }
   header img {
     width: 20vw;
     margin-left: 2px;
   }
+  #box1 {
+    margin-top: 100px;
+  }
   #box2 {
+    border: 10px solid grey;
+    display: flex;
     flex-direction: column;
+    text-align: center;
     height: 50vh;
-    justify-content: center;
-    margin-bottom: 30px;
+    gap: 0px;
   }
   #box2 input {
-    height: 10vh;
+    height: 50px;
     width: 300px;
+    margin-top: 100px;
   }
   #box2 button {
-    height: 9vh;
+    height: 50px;
     font-size: 0.9rem;
     margin: auto;
     width: 110px;
-    margin-bottom: 30px;
+    margin-bottom: 200px;
   }
   #box1 #firstpara,
   #box1 #secondpara {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
+    padding: 10px;
     gap: 0px;
   }
   #box2 {
