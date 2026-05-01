@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  align-items: center;
+}
+header img {
+  width: 15vw;
+  height: 14vh;
+}
+header button {
+  cursor: pointer;
+  background-color: red;
+  width: 6vw;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 6vh;
+  transition: all;
+  transition-duration: 1s;
+}
+header button:hover {
+  transform: scale(1.1);
+  background-color: rgb(189, 15, 15);
+}
+#box1 {
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  justify-content: center;
+  align-items: center;
+}
+#box1 h1 {
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  font-size: 3.4rem;
+}
+#box1 p {
+  color: white;
+}
+#backgroundimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+#herosection {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#secondpara {
+  margin-bottom: 30px;
+  padding-top: 24px;
+}
+#firstpara {
+  font-size: 1.8rem;
+  padding: 4px 10px;
+}
+input {
+  height: 8vh;
+  width: 30vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+#box2 button {
+  cursor: pointer;
+  height: 8vh;
+  width: 12vw;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: none;
+  transition: all;
+  transition-duration: 1s;
+}
+#box2 button:hover {
+  background-color: rgb(189, 15, 15);
+  transform: scale(1.05);
+}
+input::placeholder {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+}
+#trendingnow {
+  display: flex;
+  justify-content: center;
+}
+#images {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 20px;
+  overflow-x: scroll;
+  width: 70%;
+}
+#thirdheading {
+  color: white;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 1.4rem;
+}
+.moviesimages {
+  height: 290px;
+  border: 1px solid white;
+  width: 270px;
+  border-radius: 8px;
+  transition: all;
+  transition-duration: 1s;
+}
+.moviesimages:hover {
+  transform: scale(1.02);
+}
+#morereasons {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+#reasons {
+  display: flex;
+  width: 70%;
+  height: 70vh;
+  gap: 15px;
+}
+.miniboxes {
+  background-color: rgba(0, 0, 74, 0.806);
+  border: 1px solid white;
+  height: 60vh;
+  width: 210px;
+  padding: 10px;
+  position: relative;
+  transition: all;
+  transition-duration: 1s;
+}
+.miniboxes:hover {
+  transform: scale(1.05);
+}
+.miniboxes h2 {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+.miniboxes p {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#forthheading {
+  color: white;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+.icons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 18vh;
+  width: 6vw;
+}
+details {
+  color: white;
+}
+#faq {
+  width: 100vw;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.faqsection {
+  transition: all;
+  transition-duration: 1s;
+  font-size: 2rem;
+
+  background-color: rgb(44, 44, 44);
+  width: 70%;
+  height: auto;
+  padding-top: 12px;
+}
+.faqsection:hover {
+  background-color: rgb(70, 70, 70);
+}
+.samepara {
+  border-top: 2px solid rgb(26, 25, 25);
+  padding: 10px;
+}
+summary {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+.plus {
+  margin-right: 50px;
+  font-size: 2.2rem;
+  font-weight: 300;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.faqbox summary {
+  list-style: none;
+}
+
+.faqbox summary::-webkit-details-marker {
+  display: none;
+}
+.faqsection[open] .plus {
+  transform: rotate(45deg);
+}
+#fifthheading {
+  color: white;
+  font-size: 2.4rem;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+details p {
+  margin-left: 40px;
+}
+@media screen and (max-width: 767px) {
+  header button {
+    width: 73px;
+    height: 36px;
+  }
+  header img {
+    width: 105px;
+    height: 100px;
+  }
+  #box1 h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  #box1 #firstpara {
+    margin-top: 8px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #box1 #secondpara {
+    text-align: center;
+  }
+  #box2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #box2 input {
+    width: 360px;
+    height: 50px;
+  }
+  #box2 button {
+    width: 170px;
+    margin: auto;
+    margin-top: 10px;
+    height: 44px;
+  }
+  #backgroundimage {
+    height: 78vh;
+  }
+  #box1 {
+    height: 67vh;
+  }
+  .moviesimages {
+    gap: 10px;
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+  }
+  #images {
+    height: 30vh;
+    width: 80%;
+  }
+  #thirdheading h1 {
+    font-size: 2.2rem;
+  }
+  #reasons {
+    flex-direction: column;
+    margin-left: 0px;
+    width: 100%;
+    height: 100vh;
+  }
+  .miniboxes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  .miniboxes p {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+  .icons {
+    height: 70px;
+    width: 70px;
+    bottom: 0;
+    right: 0;
+  }
+  #forthheading {
+    font-size: 1.2rem;
+  }
+  .miniboxes {
+    margin-left: 0px;
+    width: 100vw;
+    height: 30vh;
+  }
+  #fifthheading {
+    font-size: 2rem;
+  }
+  .faqsection {
+    width: 90%;
+    height: auto;
+    font-size: 1.4rem;
+  }
+  details p {
+    margin-left: 20px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header img {
+    width: 180px;
+    height: 80px;
+  }
+  header {
+    height: 100px;
+  }
+  header button {
+    width: 90px;
+    height: 45px;
+  }
+  #box1 {
+    height: 92vh;
+  }
+  #box2 input {
+    width: 380px;
+    height: 70px;
+  }
+  #box2 button {
+    height: 60px;
+    width: 160px;
+  }
+}
