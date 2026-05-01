@@ -65,7 +65,7 @@ header button:hover {
   font-size: 1.8rem;
   padding: 4px 10px;
 }
-input {
+#box2 input {
   height: 8vh;
   width: 30vw;
   background-color: rgba(0, 0, 0, 0.7);
@@ -232,6 +232,54 @@ summary {
 }
 details p {
   margin-left: 40px;
+  margin-top: 30px;
+}
+#box3 {
+  width: 100%;
+  display: flex;
+  height: 40vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#box3 p {
+  color: white;
+}
+#box3 button {
+  cursor: pointer;
+  height: 8vh;
+  margin-right: 40px;
+  width: 11vw;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: none;
+  transition: all;
+  transition-duration: 1s;
+}
+#box3 button:hover {
+  background-color: rgb(189, 15, 15);
+  transform: scale(1.05);
+}
+#box3 input {
+  border-radius: 10px;
+  width: 36vw;
+  height: 8vh;
+  background-color: rgb(37, 37, 37);
+  border: none;
+  color: white;
+  text-align: center;
+}
+#box4 {
+  display: flex;
+  gap: 10px;
+}
+#box4 input::placeholder {
+  color: white;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   header button {
@@ -302,8 +350,8 @@ details p {
     padding: 8px;
   }
   .icons {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 50px;
     bottom: 0;
     right: 0;
   }
@@ -321,11 +369,29 @@ details p {
   .faqsection {
     width: 90%;
     height: auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   details p {
     margin-left: 20px;
     text-align: center;
+  }
+  #box4 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #box4 input {
+    width: 380px;
+    height: 55px;
+  }
+  #box4 p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 20px;
+  }
+  #box4 button {
+    width: 120px;
+    height: 55px;
+    margin: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
