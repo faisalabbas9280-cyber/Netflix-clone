@@ -188,8 +188,7 @@ details {
 .faqsection {
   transition: all;
   transition-duration: 1s;
-  font-size: 2rem;
-
+  font-size: 1.6rem;
   background-color: rgb(44, 44, 44);
   width: 70%;
   height: auto;
@@ -232,7 +231,7 @@ summary {
 }
 details p {
   margin-left: 40px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 #box3 {
   width: 100%;
@@ -409,6 +408,7 @@ a {
   }
   details p {
     margin-left: 20px;
+    margin-top: 4px;
     text-align: center;
   }
   #box4 {
